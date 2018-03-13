@@ -1,19 +1,21 @@
 body {
   margin: 0;
   font-family: "Rozha One", serif;
+  min-height: 540px;
+  /* min-width: 360px; */
 }
 
 /* header */
 
 header {
-  /* padding-top: 40px; */
   background-color: #e2af15e9;
+  justify-content: left;
 }
 
 #logo {
   height: 90px;
   width: 160px;
-  padding: 40px 0 0 100px;
+  padding: 40px 0 10px 80px;
 }
 
 /* top page */
@@ -24,7 +26,7 @@ header {
 }
 
 #top {
-  background: transparent url("./img/Imagine-de-fundal.png") 0 0;
+  background: transparent url("./img/Imagine-de-fundal.png") 0;
   background-color: #e2af15cd;
   color: white;
   text-align: center;
@@ -46,40 +48,38 @@ header {
 iframe {
   width: 700px;
   height: 400px;
-  margin-top: 40px;
-  margin-bottom: 70px;
+  margin: 40px 0 70px 0;
 }
 
 /* footer */
 
 footer {
   background-color: rgb(31, 57, 77);
-  /* display: inline-block;
   width: 100%;
-  position: relative; */
 }
 
 .row {
-  display: inline-block;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   color: rgb(230, 230, 230);
 }
 
 .nav {
   list-style: none;
-  float: left;
-  padding-left: 80px;
+  justify-content: left;
 }
 
 .row img {
-  float: left;
-  margin: 20px 0 0 30%;
+  flex-direction: row;
+  justify-content: center;
+  height: 90px;
+  margin-top: 20px;
 }
 
 .contact {
   list-style: none;
-  float: right;
-  padding-right: 80px;
+  justify-content: right;
 }
 
 .nav li a:link,
@@ -104,25 +104,18 @@ footer {
 
 @media (max-width: 400px) {
   iframe {
-    width: 98%;
+    width: 90vw;
+    height: 55vh;;
   }
 
-  /* .row {
-    display: block;
-    height: 330px;
+  .row {
+    flex-direction: column;
+    /* justify-content: center; */
     text-align: center;
-    width: 100%;
-  }
-
-  .nav,
-  .contact {
-    margin: 3%;
-    padding: 0;
-    width: 100%;
   }
 
   .row img {
-    margin: 3%;
-    padding-left: 35%;
+    width: 60px;
+    padding-left: 45vw;
   }
-} */
+}
