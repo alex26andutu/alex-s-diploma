@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "Rozha One", serif;
   min-height: 540px;
-  /* min-width: 360px; */
+  flex-direction: column;
 }
 
 /* header */
@@ -46,9 +46,9 @@ header {
 }
 
 iframe {
-  width: 700px;
-  height: 400px;
-  margin: 40px 0 70px 0;
+  width: 50vw;
+  height: 50vh;
+  margin-bottom: 20px;
 }
 
 /* footer */
@@ -70,16 +70,79 @@ footer {
   justify-content: left;
 }
 
-.row img {
-  flex-direction: row;
-  justify-content: center;
-  height: 90px;
-  margin-top: 20px;
+.thekit {
+  padding: 20px 0 0 80px;
+  width: 50px;
 }
 
 .contact {
   list-style: none;
   justify-content: right;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* .social img {
+  width: 20px;
+  height: 20px;
+  padding-top: 20px;
+} */
+
+.icones {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.icones li {
+  margin-right: 15px;
+}
+
+.facebook img:last-child{
+  display: none;
+}
+.facebook:hover img:last-child{
+ display: block;
+}
+.facebook:hover :first-child{
+  display: none;
+}
+
+.twitter img:last-child{
+  display: none;
+}
+.twitter:hover img:last-child{
+ display: block;
+}
+.twitter:hover :first-child{
+  display: none;
+}
+
+.linkedin img:last-child{
+  display: none;
+}
+.linkedin:hover img:last-child{
+ display: block;
+}
+.linkedin:hover :first-child{
+  display: none;
+}
+
+.google img:last-child{
+  display: none;
+}
+.google:hover img:last-child{
+ display: block;
+}
+.google:hover :first-child{
+  display: none;
 }
 
 .nav li a:link,
@@ -102,20 +165,16 @@ footer {
 
 /* responsive */
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   iframe {
     width: 90vw;
-    height: 55vh;;
   }
 
   .row {
     flex-direction: column;
-    /* justify-content: center; */
-    text-align: center;
   }
 
-  .row img {
-    width: 60px;
-    padding-left: 45vw;
+  .thekit {
+    padding: 0 0 10px 40px;
   }
 }
